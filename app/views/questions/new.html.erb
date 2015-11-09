@@ -1,0 +1,13 @@
+<h1>Create a New Question</h1><br>
+
+<%= form_for Question.new do |f| %>
+<div>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+</div><br>
+<div>
+  <%= f.label :body %><br>
+  <%= f.text_area :body %>
+</div><br>
+<%= f.submit %>
+<% end %>
