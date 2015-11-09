@@ -1,4 +1,5 @@
 <h1>All Questions</h1>
+<%= image_tag "Sonic_the_Hedgehog_Rush_Adventure.jpg" %>
 <% @questions.each do |q| %>
 <%= link_to q.title, question_path(q) %>
 <hr>
